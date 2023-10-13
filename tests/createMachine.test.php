@@ -24,10 +24,10 @@ test('takes in state machine options', function () {
                     $success = db()
                         ->update('users')
                         ->values([
-                            'status' => 'rejected'
+                            'status' => 'rejected',
                         ])
                         ->where([
-                            'id' => 1
+                            'id' => 1,
                         ]);
 
                     if ($success) {
@@ -63,10 +63,10 @@ test('can check if a transition is possible', function () {
                     $success = db()
                         ->update('users')
                         ->values([
-                            'status' => 'rejected'
+                            'status' => 'rejected',
                         ])
                         ->where([
-                            'id' => 1
+                            'id' => 1,
                         ]);
 
                     if ($success) {
@@ -104,10 +104,10 @@ test('can transition to a new state', function () {
                     $success = db()
                         ->update('users')
                         ->values([
-                            'status' => 'rejected'
+                            'status' => 'rejected',
                         ])
                         ->where([
-                            'id' => 1
+                            'id' => 1,
                         ]);
 
                     if ($success) {
@@ -143,10 +143,10 @@ test('can transition to a new state with an action', function () {
                     $success = db()
                         ->update('users')
                         ->values([
-                            'status' => 'rejected'
+                            'status' => 'rejected',
                         ])
                         ->where([
-                            'id' => 1
+                            'id' => 1,
                         ]);
 
                     if ($success) {
@@ -182,10 +182,10 @@ test('can transition to a new state with an action that fails', function () {
                     $success = db()
                         ->update('users')
                         ->values([
-                            'status' => 'rejected'
+                            'status' => 'rejected',
                         ])
                         ->where([
-                            'id' => 1
+                            'id' => 1,
                         ]);
 
                     if ($success) {
@@ -221,10 +221,10 @@ test('can reset machine', function () {
                     $success = db()
                         ->update('users')
                         ->values([
-                            'status' => 'rejected'
+                            'status' => 'rejected',
                         ])
                         ->where([
-                            'id' => 1
+                            'id' => 1,
                         ]);
 
                     if ($success) {

@@ -15,29 +15,30 @@ abstract class State
 
     /**
      * Create a new state
-     * 
+     *
      * @return void
      */
     abstract public function create();
 
     /**
      * Set initial state
-     * 
+     *
      * @param string $state The initial state
-     * 
+     *
      * @return State
      */
     public function setInitial($state)
     {
         $this->initial = $state;
+
         return $this;
     }
 
     /**
      * Add a state
-     * 
+     *
      * @param string|array $state The state to add
-     * 
+     *
      * @return State
      */
     public function addState($state)
@@ -53,10 +54,10 @@ abstract class State
 
     /**
      * Create a new transition
-     * 
+     *
      * @param string|array $transition The name of the transition or an array of transitions
      * @param array $data The transition to create
-     * 
+     *
      * @return State
      */
     public function addTransition($transition, array $data = [])
