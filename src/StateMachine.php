@@ -22,9 +22,9 @@ class StateMachine
 
     /**
      * Create a new state machine
-     * 
+     *
      * @param array|State $state The state for the machine
-     * 
+     *
      * @return void
      */
     public function __construct($state)
@@ -43,12 +43,13 @@ class StateMachine
 
     /**
      * Toggle debug mode
-     * 
+     *
      * @return StateMachine
      */
     public function throwExceptions(): StateMachine
     {
         $this->throwExceptions = true;
+
         return $this;
     }
 
@@ -86,7 +87,7 @@ class StateMachine
      * Check if a transition is possible
      *
      * @param string $transition
-     * @return boolean
+     * @return bool
      */
     public function can(string $transition): bool
     {
@@ -142,7 +143,7 @@ class StateMachine
      * Check if the current state is the given state
      *
      * @param string $state
-     * @return boolean
+     * @return bool
      */
     public function is(string $state): bool
     {
@@ -161,12 +162,13 @@ class StateMachine
 
     /**
      * Toggle the state machine to use a model
-     * 
+     *
      * @param mixed $model The model to use
      */
     public function useModel($model): StateMachine
     {
         $this->model = $model;
+
         return $this;
     }
 
@@ -176,6 +178,7 @@ class StateMachine
     public function useKey(string $key): StateMachine
     {
         $this->stateKey = $key;
+
         return $this;
     }
 
