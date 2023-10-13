@@ -1,13 +1,10 @@
 {
-	"name": "leafs/leaf",
-	"description": "Simple, performant and powerful PHP micro-framework for rapid web app & API development",
+	"name": "leafs/shu",
+	"description": "State machine in a bottle",
 	"keywords": [
-		"microframework",
-		"rest",
-		"router",
-		"leaf",
-		"php",
-		"framework"
+		"state",
+		"events",
+		"php"
 	],
 	"homepage": "https://leafphp.dev",
 	"type": "library",
